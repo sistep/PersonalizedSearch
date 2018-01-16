@@ -1,16 +1,14 @@
 package test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Regextest {
 
 	public static void main(String[] args) {
-		String url="http://weibo.cn/5479567811/D1RizsO3L";
-		String	userID=url.substring(url.indexOf("cn/")+3, url.lastIndexOf("/"));
-		System.out.println(userID);
-		String weiboID=userID+"-"+url.substring(url.lastIndexOf("/")+1);
-		System.out.println(weiboID);
+		listtest();
 		
 	}
 	
@@ -27,6 +25,18 @@ public class Regextest {
 		}
 		return names;
 	}
+	
+	public static void listtest(){
+		String word="新闻";
+		String sword="新闻";
+		if(word==sword){
+			System.out.println("first");
+		}
+		if(word.equals(sword)){
+			System.out.println("second");
+		}
+	}
+	
 	
 	
 
